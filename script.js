@@ -12,7 +12,7 @@ const arr = [];
 function letterCombinations(s) {
 	backtrack(s, 0, '');
 	arr.sort();
-	return arr;
+	return arr.filter(val => val.length == s.length);
 }
 
 function backtrack(s, idx, val){
