@@ -25,7 +25,7 @@ function backtrack(s, idx, val){
 	for(let c of curr){
 		val = val + c;
 		backtrack(s, idx+1, val);
-		val.length = val.length-1;
+		val = val.slice(0, -1);
 	}
 }
 
