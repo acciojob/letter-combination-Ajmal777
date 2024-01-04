@@ -21,7 +21,7 @@ function backtrack(s, idx, val){
 		return;
 	}
 
-	const curr = map.s[idx];
+	const curr = map[s[idx]];
 	for(let c of curr){
 		val = val + c;
 		backtrack(s, idx+1, val);
